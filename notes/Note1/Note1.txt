@@ -1,0 +1,51 @@
+
+//고쳐야 될거
+아이템 드래그중인 상태로 새로운 상자 루트와 동시에 해당 루트 자리에 아이템을 올려놓은 경우,
+해당 상자로부터 멀어지게되면, 아이템이 증발해버리는 버그 //fixed
+
+무게 스크립트 관련 버그 (set_item_weight)
+
+인벤토리를 연 상태로 아이템 버리고 그 상태로 바로 아이템을 주웠을때, 칸 판정이 이상하게 나는 버그
+= 인벤토리를 연상태로 아이탬을 한번에 여러번 버리는 경우, 버린 아이템을 다시 주웠을때, 아이템끼리 겹치는 버그 //FIXED
+
+스텍어블 아이템 버린경우, 인벤토리에 더미 아이템 생기는 버그 //fixed
+
+인벤토리 연상태로 아이템 위에 마우스 커서를 올려놓은뒤, 다시 때고 플레이어 위치 이동후, 다시 올려놓을 경우
+히트박스 표기가 잘못되는 버그
+
+현재 룸에서 다른 룸으로 이동후 다시 돌아오게되면, 블럭의 히트박스가 제거되는 버그 //fixed
+
+한번에 두칸 이상의 방을 이동 한 뒤, 2칸 이상의 이전 방으로 다시 되돌아가면, 블럭이 없어져있는 버그 //fixed
+
+플레이어가 도중에 참여한경우, 맵 로드가 이상해지는 버그
+
+
+//추가해야 될거
+아이템 인스턴스 멀티플레이화
+ 
+
+
+
+saved_owner_.in_bp_item_spr[inv_x,inv_y] = -4
+		saved_owner_.in_bp_item_img_ind[inv_x,inv_y] = -4
+		saved_owner_.in_bp_item_xsize[inv_x,inv_y] = -4
+		saved_owner_.in_bp_item_ysize[inv_x,inv_y] = -4
+		saved_owner_.in_bp_item_oxsize[inv_x,inv_y] = -4
+		saved_owner_.in_bp_item_oysize[inv_x,inv_y] = -4
+		saved_owner_.in_bp_item_angle[inv_x,inv_y] = -4
+		saved_owner_.in_bp_item_color[inv_x,inv_y] = -4
+		saved_owner_.in_bp_item_name[inv_x,inv_y] = -4
+		saved_owner_.in_bp_item_stacks[inv_x,inv_y] = -4
+		saved_owner_.in_bp_item_max_stacks[inv_x,inv_y] = -4
+	
+		owner_.in_bp_item_spr[inv_x,inv_y] = -4
+		owner_.in_bp_item_img_ind[inv_x,inv_y] = -4
+		owner_.in_bp_item_xsize[inv_x,inv_y] = -4
+		owner_.in_bp_item_ysize[inv_x,inv_y] = -4
+		owner_.in_bp_item_oxsize[inv_x,inv_y] = -4
+		owner_.in_bp_item_oysize[inv_x,inv_y] = -4
+		owner_.in_bp_item_angle[inv_x,inv_y] = -4
+		owner_.in_bp_item_color[inv_x,inv_y] = -4
+		owner_.in_bp_item_name[inv_x,inv_y] = -4
+		owner_.in_bp_item_stacks[inv_x,inv_y] = -4
+		owner_.in_bp_item_max_stacks[inv_x,inv_y] = -4

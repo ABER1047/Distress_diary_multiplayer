@@ -1,0 +1,47 @@
+with(inventory_item)
+			{
+				if (owner_ = argument1 && inv_x = argument3 && inv_y = argument4)
+				{
+					if (xsize > 1 || ysize > 1)
+					{
+					var _xs = 1-xsize%2
+					var _ys = 1-ysize%2
+					var _xx = -floor(xsize/2)+_xs
+					var _yy = -floor(ysize/2)+_ys
+			
+			
+						for(var i = _xx; i <= (xsize-floor(xsize/2)-xsize%2); i++)
+						{
+							for(var ii = _yy; ii <= (ysize-floor(ysize/2)-ysize%2); ii++)
+							{
+							var _xx_s = replace_inv_x+i
+							var _yy_s = replace_inv_y+ii
+				
+							if _xx_s < 0
+							{
+							_xx_s = 0
+							}
+				
+							if _yy_s < 0
+							{
+							_yy_s = 0
+							}
+				
+							owner_.in_bp_item_spr[_xx_s,_yy_s] = spr_wall_mask;
+							}
+						}
+					}
+		
+			owner_.in_bp_item_spr[inv_x,inv_y] = sprite_get_name(sprite_index)
+			owner_.in_bp_item_img_ind[inv_x,inv_y] = image_index
+			owner_.in_bp_item_xsize[inv_x,inv_y] = xsize
+			owner_.in_bp_item_ysize[inv_x,inv_y] = ysize
+			owner_.in_bp_item_oxsize[inv_x,inv_y] = oxsize
+			owner_.in_bp_item_oysize[inv_x,inv_y] = oysize
+			owner_.in_bp_item_angle[inv_x,inv_y] = angle_set
+			owner_.in_bp_item_color[inv_x,inv_y] = bg_color
+			owner_.in_bp_item_name[inv_x,inv_y] = item_name
+			owner_.in_bp_item_stacks[inv_x,inv_y] = stack_num
+			owner_.in_bp_item_max_stacks[inv_x,inv_y] = max_stack_num
+			instance_destroy()
+			}

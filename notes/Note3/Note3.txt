@@ -1,0 +1,136 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more IMG_INFOrmation
+///@param t_bp_name
+///@param xsize
+///@param ysize
+///@param owner[for_type_2] 
+
+function check_inv_empty(argument0,argument1,argument2,argument3)
+{
+	with(inventory_backpack)
+	{
+		if (bp_name = argument0 || id = argument0)
+		{
+		show_debug_message(string(argument1)+" , "+string(argument2))
+		show_debug_message("\n\n\n\n\n")
+			for(var ii = 0; ii < max_height; ii++)
+			{
+				for(var i = 0; i < max_width; i++)
+				{
+				show_debug_message(string(i)+", "+string(ii))
+					if (argument1 = 1 && argument2 = 1)
+					{
+						if (in_bp_item_spr[i,ii] = -4)
+						{
+						global.searched_item_xpos = i;
+						global.searched_item_ypos = ii;
+						global.searched_empty_xsize = 1;
+						global.searched_empty_ysize = 1;                                       
+						global.searched_empty_angle_set = 0;
+						show_debug_message(string(global.searched_item_xpos)+" , "+string(global.searched_item_ypos))
+						return 0;
+						}
+						else
+						{
+						global.searched_item_xpos = -4;
+						global.searched_item_ypos = -4;
+						}
+					}
+					else
+					{
+					var check_out_of_array_x = i-floor(argument1/2)
+					var check_out_of_array_y = ii-floor(argument2/2)
+					show_debug_message(string(check_out_of_array_x)+" || "+string(check_out_of_array_y))
+					
+						if check_out_of_array_x >= 0 && check_out_of_array_y >= 0
+						{
+						var check_empty = 0
+						var check_empty_sec = 0
+							for(var xx = 0; xx < argument1; xx++)
+							{
+							var check_out_of_array_x_sec = check_out_of_array_x+xx
+								for(var yy = 0; yy < argument2; yy++)
+								{
+								var check_out_of_array_y_sec = check_out_of_array_y+yy
+								
+									if check_out_of_array_x_sec < max_width && check_out_of_array_y_sec < max_height
+									{
+										if (in_bp_item_spr[check_out_of_array_x_sec,check_out_of_array_y_sec] = -4)
+										{
+										check_empty++
+										}
+									}
+									
+									if check_out_of_array_x_sec < max_height && check_out_of_array_y_sec < max_width
+									{
+										if (in_bp_item_spr[check_out_of_array_y_sec,check_out_of_array_x_sec] = -4)
+										{
+										check_empty_sec++
+										}
+									}
+								}
+							}
+							show_debug_message(string(check_empty)+" / "+string(check_empty_sec)+" >"+string(argument1*argument2))
+							
+							if check_empty = argument1*argument2
+							{
+							global.searched_item_xpos = check_out_of_array_x+floor((argument1-1)/2);
+							global.searched_item_ypos = check_out_of_array_y+floor((argument2-1)/2);
+							global.searched_empty_xsize = argument1;
+							global.searched_empty_ysize = argument2;                                       
+							global.searched_empty_angle_set = 0;
+							return 0;
+							}
+							else if check_empty_sec = argument1*argument2
+							{
+							global.searched_item_xpos = check_out_of_array_y+floor((argument2-1)/2);
+							global.searched_item_ypos = check_out_of_array_x+floor((argument1-1)/2);
+							global.searched_empty_xsize = argument1;
+							global.searched_empty_ysize = argument2;                                       
+							global.searched_empty_angle_set = 1;
+							return 0;
+							}
+							else
+							{
+							global.searched_item_xpos = -4;
+							global.searched_item_ypos = -4;
+							}
+						}
+						else
+						{
+						global.searched_item_xpos = -4;
+						global.searched_item_ypos = -4;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	if instance_exists(argument3)
+	{
+		for(var ii = 0; ii < argument3.max_height; ii++)
+		{
+			for(var i = 0; i < argument3.max_width; i++)
+			{
+			show_debug_message(string(i)+", "+string(ii))
+				if (argument3.in_bp_item_spr[i,ii] = -4)
+				{
+				global.searched_item_xpos = i
+				global.searched_item_ypos = ii
+				global.searched_empty_xsize = 1;
+				global.searched_empty_ysize = 1;                                       
+				global.searched_empty_angle_set = 0;
+				show_debug_message(string(global.searched_item_xpos)+" , "+string(global.searched_item_ypos))
+				return 1;
+				}
+				else
+				{
+				global.searched_item_xpos = -4;
+				global.searched_item_ypos = -4;
+				}
+			}
+		}
+	}
+return -1;
+}

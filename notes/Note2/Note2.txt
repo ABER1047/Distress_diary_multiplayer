@@ -1,0 +1,5 @@
+buffer_write(mapdata_buffer, buffer_string,global.map_data_obj_ind[cal_,obj_sequence]);
+	buffer_write(mapdata_buffer, buffer_string,global.map_data_obj_spr_ind[cal_,obj_sequence]);
+	buffer_write(mapdata_buffer, buffer_string,global.map_data_obj_img_ind[cal_,obj_sequence]);
+	buffer_write(mapdata_buffer, buffer_string,global.map_data_obj_xx[cal_,obj_sequence]);
+	buffer_write(mapdata_buffer, buffer_string,global.map_data_obj_yy[cal_,obj_sequence]);
