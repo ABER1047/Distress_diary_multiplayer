@@ -538,60 +538,48 @@ depth = -floor(y+19)
 }
 else
 {
-	//revive
-	if can_revive_time > 0
-	{
-		if (knocked_out > 0 && global.hp > 0)
-		{
-		var my_p = get_my_p(global.nickname,0)
+var my_p = get_my_p(global.nickname,0)
+var get_other_p = instance_nearest(x,y,player)
+
 	
-			if point_distance(x,y,my_p.x,my_p.y) <= 64
+	if (instance_exists(get_other_p) && get_other_p.knocked_out > 0 && global.hp > 0)
+	{
+		if point_distance(get_other_p.x,get_other_p.y,my_p.x,my_p.y) <= 72
+		{
+			if keyboard_check(ord("F"))
 			{
-				if mouse_check_button(mb_right)
-				{
-				obj_camera.tv_x = 1280*0.55
-				obj_camera.tv_y = 720*0.55
-				my_p.wounded_with_cannotmove = 1
-				reviving_now ++
-				}
-				else
-				{
-				my_p.wounded_with_cannotmove = 0
-				reviving_now = 0
-				obj_camera.tv_x = 1280*0.75
-				obj_camera.tv_y = 720*0.75
-				}
-		
-				if reviving_now > 0
-				{
-				reviving_now ++;
-				}
-		
-				if reviving_now >= 800
-				{
-				show_debug_message("R")
-				buffer_seek(command_buffer, buffer_seek_start, 0);
-				buffer_write(command_buffer, buffer_u8, code_m.DATA.COMMAND);
-				buffer_write(command_buffer, buffer_u8, code_m.my_ID);
-				buffer_write(command_buffer, buffer_u8, code_m.COMM.P_REVIVE);
-				buffer_write(command_buffer, buffer_string,string(nickname));
-				send_all(command_buffer);
-				reviving_now = 0;
-				obj_camera.tv_x = 1280*0.75
-				obj_camera.tv_y = 720*0.75
-				}
-			global.charging_gage = reviving_now/8;
+			obj_camera.tv_x = 1280*0.55
+			obj_camera.tv_y = 720*0.55
+			my_p.wounded_with_cannotmove = 1
+			reviving_now ++
 			}
 			else
 			{
-				if reviving_now > 0
-				{
-				reviving_now = 0
-				global.charging_gage = 0;
-				obj_camera.tv_x = 1280*0.75
-				obj_camera.tv_y = 720*0.75
-				}
+			my_p.wounded_with_cannotmove = 0
+			reviving_now = 0
+			obj_camera.tv_x = 1280*0.75
+			obj_camera.tv_y = 720*0.75
 			}
+		
+			if reviving_now > 0
+			{
+			reviving_now ++;
+			}
+		
+			if reviving_now >= 800
+			{
+			show_debug_message("R")
+			buffer_seek(command_buffer, buffer_seek_start, 0);
+			buffer_write(command_buffer, buffer_u8, code_m.DATA.COMMAND);
+			buffer_write(command_buffer, buffer_u8, code_m.my_ID);
+			buffer_write(command_buffer, buffer_u8, code_m.COMM.P_REVIVE);
+			buffer_write(command_buffer, buffer_string,string(nickname));
+			send_all(command_buffer);
+			reviving_now = 0;
+			obj_camera.tv_x = 1280*0.75
+			obj_camera.tv_y = 720*0.75
+			}
+		global.charging_gage = reviving_now/8;
 		}
 		else
 		{
@@ -602,6 +590,16 @@ else
 			obj_camera.tv_x = 1280*0.75
 			obj_camera.tv_y = 720*0.75
 			}
+		}
+	}
+	else
+	{
+		if reviving_now > 0
+		{
+		reviving_now = 0
+		global.charging_gage = 0;
+		obj_camera.tv_x = 1280*0.75
+		obj_camera.tv_y = 720*0.75
 		}
 	}
 }
