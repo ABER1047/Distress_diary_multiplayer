@@ -36,6 +36,13 @@ if (speed_h_ = 0 && speed_v_ = 0)
 
 var x_pos_ = global.n_pos_x[playerID];
 var y_pos_ = global.n_pos_y[playerID];
-//var scale = irandom_range(1,100)/20
-create_glowstick(x,y+13,0.6*image_xscale,irandom_range(2,3)*sign(speed_v_),irandom_range(2,3)*sign(speed_h_),-irandom_range(3,4),1,x_pos_,y_pos_)
+var random_val__ = irandom_range(1,100)
+	if random_val__ < 50
+	{
+	create_glowstick(x,y+13,0.6*image_xscale,irandom_range(2,3)*sign(speed_v_),irandom_range(2,3)*sign(speed_h_),-irandom_range(3,4),1,x_pos_,y_pos_)
+	}
+	else
+	{
+	create_bomb(x,y,20,last_angle*90,5,0,3,0,1,1,x_pos_,y_pos_)
+	}
 }

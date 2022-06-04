@@ -5,7 +5,12 @@ var s_y = camera_get_view_y(view_camera[0])
 var s_w = camera_get_view_width(view_camera[0])
 var s_h = camera_get_view_height(view_camera[0])
 var c_x = obj_camera.v_x/1280
-
+var chat_dir = 1
+if room = Room2
+{
+s_h = 96
+chat_dir = -1
+}
 
 if(chat_alpha > 0)
 {
@@ -25,6 +30,6 @@ var t_i = received_chat_num
 
 	for(var i = 0; i < t_i; i++) 
 	{
-	draw_text_kl_scale(s_x+c_x*16,s_y+s_h-c_x*(100+i*24),global.chat[i],64*c_x,9999,chat_alpha,c_white,0,-1,font0,c_x*0.35,c_x*0.35,0)
+	draw_text_kl_scale(s_x+c_x*16,s_y+s_h-c_x*(100+i*24*chat_dir),global.chat[i],64*c_x,9999,chat_alpha,c_white,0,-1,font0,c_x*0.35,c_x*0.35,0)
 	}
 }

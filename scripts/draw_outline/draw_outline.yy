@@ -6,7 +6,7 @@
     "path": "folders/스크립트.yy",
   },
   "resourceVersion": "1.0",
-  "name": "create_buble_effect",
+  "name": "draw_outline",
   "tags": [],
   "resourceType": "GMScript",
 }

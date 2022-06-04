@@ -1,5 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
+/*if surface_exists(global.bubble_surf)
+{
+draw_outline(global.bubble_surf,1.5)
+}
+else
+{
+global.bubble_surf = surface_create(1920,1080)
+}*/
+
+
 if keyboard_check(ord("V")) || keyboard_check(ord("B")) || keyboard_check(ord("N"))
 {
 var target = obj_mouse

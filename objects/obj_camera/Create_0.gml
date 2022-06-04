@@ -33,8 +33,6 @@ global.guide_icon = 0;
 global.in_smoke_alpha = 0
 global.in_smoke = c_white
 
-global.night_vision = 0
-
 for(var i = 0; i <= 10; i++)
 {
 global.disp_got_item[i] = -4

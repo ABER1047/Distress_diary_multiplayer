@@ -1,13 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
-if keyboard_check(ord("`")) || keyboard_check(ord("M"))
+if room = Room2 || keyboard_check(ord("`")) || keyboard_check(ord("M"))
 {
 m_map_alpha = 1000
 }
 
 if m_map_alpha > 0
 {
-var c_x = obj_camera.v_x/1280
+//var c_x = obj_camera.v_x/1280
 var start_x = 320
 var start_y = -720*0.225
 

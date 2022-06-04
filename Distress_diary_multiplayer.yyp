@@ -39,7 +39,7 @@
     {"id":{"name":"spr_wall_mask","path":"sprites/spr_wall_mask/spr_wall_mask.yy",},"order":44,},
     {"id":{"name":"spr_drink","path":"sprites/spr_drink/spr_drink.yy",},"order":4,},
     {"id":{"name":"create_test_map","path":"objects/create_test_map/create_test_map.yy",},"order":3,},
-    {"id":{"name":"create_buble_effect","path":"scripts/create_buble_effect/create_buble_effect.yy",},"order":17,},
+    {"id":{"name":"create_bubble_effect","path":"scripts/create_bubble_effect/create_bubble_effect.yy",},"order":17,},
     {"id":{"name":"wall_shadow","path":"objects/wall_shadow/wall_shadow.yy",},"order":4,},
     {"id":{"name":"spr_original_bp4_1","path":"sprites/spr_original_bp4_1/spr_original_bp4_1.yy",},"order":34,},
     {"id":{"name":"frame_thrower","path":"sounds/frame_thrower/frame_thrower.yy",},"order":25,},
@@ -211,7 +211,9 @@
     {"id":{"name":"spr_original_bp5_1","path":"sprites/spr_original_bp5_1/spr_original_bp5_1.yy",},"order":36,},
     {"id":{"name":"Sprite30","path":"sprites/Sprite30/Sprite30.yy",},"order":46,},
     {"id":{"name":"draged_item","path":"sounds/draged_item/draged_item.yy",},"order":2,},
+    {"id":{"name":"draw_outline","path":"scripts/draw_outline/draw_outline.yy",},"order":50,},
     {"id":{"name":"set_xy","path":"scripts/set_xy/set_xy.yy",},"order":11,},
+    {"id":{"name":"set_surf_outline","path":"scripts/set_surf_outline/set_surf_outline.yy",},"order":51,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":1,},
   ],
   "Options": [

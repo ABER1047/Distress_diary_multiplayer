@@ -12,4 +12,9 @@ global.chating = argument0;
 	{
 	global.chat[0] = string(get_nickname)+" : "+string(global.chating);
 	}
+	else
+	{
+	global.chat[0] = string(global.chating);
+	code_m.received_chat_justbefore = 1
+	}
 }

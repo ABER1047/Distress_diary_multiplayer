@@ -111,13 +111,13 @@ time ++
 		repeat(irandom_range(0,2))
 		{
 		
-		create_buble_effect(irandom_range(10,100)/250,-90+irandom_range(-15,15),0,choose(-1)*irandom_range(1,100)/10,0.08,0.08,$FF00D2FE,$FF076BFE,1.5,$FF737272,x+irandom_range(-6,6),y+irandom_range(-6,6),depth-1,1,true,false)
+		create_bubble_effect(irandom_range(10,100)/250,-90+irandom_range(-15,15),0,choose(-1)*irandom_range(1,100)/10,0.08,0.08,$FF00D2FE,$FF076BFE,1.5,$FF737272,x+irandom_range(-6,6),y+irandom_range(-6,6),depth-1,1,true,false)
 		}
 	
 		repeat(irandom_range(0,2))
 		{
 		
-		create_buble_effect(irandom_range(10,100)/250,-90+irandom_range(-15,15),0,choose(-1)*irandom_range(1,100)/10,0.07,0.07,c_white,$FF00D2FE,1.5,$FF342F32,x+irandom_range(-6,6),y+irandom_range(-6,6),depth-1,1,true,false)
+		create_bubble_effect(irandom_range(10,100)/250,-90+irandom_range(-15,15),0,choose(-1)*irandom_range(1,100)/10,0.07,0.07,c_white,$FF00D2FE,1.5,$FF342F32,x+irandom_range(-6,6),y+irandom_range(-6,6),depth-1,1,true,false)
 		}
 	
 	player_wounded(0,1,0.05,0,0,id)

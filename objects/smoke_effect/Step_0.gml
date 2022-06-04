@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if set_smoke_val = 1 && stop_step_cal = 0
+if set_smoke_val = 1 && stop_step_cal = 0 && can_draw > 0
 {
 	for(var i = 0; i < smoke_size_cal; i++)
 	{

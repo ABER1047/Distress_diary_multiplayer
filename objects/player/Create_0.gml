@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 //multiplayer
+;
 command_buffer = buffer_create(512,buffer_grow,1);
 
 wounded = 0

@@ -160,7 +160,7 @@ depth = -floor(y+19)
 	
 	
 	var ins_place = instance_place(x,y+19,smoke_effect)
-	if ins_place >= 0 && instance_exists(ins_place)
+	if instance_exists(ins_place) && ins_place.can_draw > 0
 	{
 	global.in_smoke = ins_place.image_blend;
 	global.in_smoke_alpha += (1.01 - global.in_smoke_alpha)*0.05

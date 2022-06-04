@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+global.bubble_surf = surface_create(1920, 1080);
 randomize()
 
 command_buffer = buffer_create(15,buffer_grow,1);
@@ -24,6 +25,7 @@ global.master_volume = 1
 global.sfx_volume = 1
 global.show_hitbox = 0
 global.interact_type = 0 //0 = toggle
+global.night_vision = 0
 
 ////////////////////////////////////////////////////////////////////////////////////////
 global.hp_bar_state = 1

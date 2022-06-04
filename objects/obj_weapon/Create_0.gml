@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+setting_object = 0
+alarm[3] = 2
 command_buffer = buffer_create(512,buffer_grow,1);
 image_speed = 0
 keep_attacking = 0

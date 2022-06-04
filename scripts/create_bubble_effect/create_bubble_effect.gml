@@ -16,7 +16,7 @@
 ///@param pass_block
 ///@param auto_depth
 
-function create_buble_effect(argument0,argument1,argument2,argument3,argument4,argument5,argument6,argument7,argument8,argument9,argument10,argument11,argument12,argument13,argument14,argument15)
+function create_bubble_effect(argument0,argument1,argument2,argument3,argument4,argument5,argument6,argument7,argument8,argument9,argument10,argument11,argument12,argument13,argument14,argument15)
 {
 	if optimizing_effect(2)
 	{
@@ -37,6 +37,20 @@ function create_buble_effect(argument0,argument1,argument2,argument3,argument4,a
 	ef_ins__.auto_depth = argument15
 	ef_ins__.pos_x = global.n_pos_x[code_m.my_ID];
 	ef_ins__.pos_y = global.n_pos_y[code_m.my_ID];
+	
+		//if argument15 > 0
+		//{
+		//ef_ins__.sepa_surf = true
+		//ef_ins__.surf_owner = id
+			//if !variable_instance_exists(id,"owner_surface")
+			//{
+			//;
+			//}
+		//}
+		//else
+		//{
+		//ef_ins__.sepa_surf = -4
+		//}
 	return ef_ins__;
 	}
 	else

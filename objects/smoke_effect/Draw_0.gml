@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if check_n_room(id,code_m.my_ID)
 {
+can_draw = 1
 	if set_smoke_val = 1
 	{
 	var n_draw_check = 0
@@ -37,4 +38,8 @@ if check_n_room(id,code_m.my_ID)
 	draw_circle(x,y,smoke_size,false)
 	draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,c_green,0.25)
 	}
+}
+else
+{
+can_draw = 0
 }

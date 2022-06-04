@@ -13,13 +13,13 @@ time ++
 	{
 		repeat(irandom_range(0,2))
 		{
-		create_buble_effect(irandom_range(10,100)/250,direction+irandom_range(-10,10),0,-1*irandom_range(1,100)/10,0.03,0.03,$FF00D2FE,$FF076BFE,1.5,$FF737272,x+irandom_range(-6,6),y+irandom_range(-6,6),depth-1,1,true,false)
+		create_bubble_effect(irandom_range(10,100)/250,direction+irandom_range(-10,10),0,-1*irandom_range(1,100)/10,0.03,0.03,$FF00D2FE,$FF076BFE,1.5,$FF737272,x+irandom_range(-6,6),y+irandom_range(-6,6),depth-1,1,true,false)
 		}
 	
 		repeat(irandom_range(0,2))
 		{
 		
-		create_buble_effect(irandom_range(10,100)/250,direction+irandom_range(-10,10),0,-1*irandom_range(1,100)/10,0.03,0.03,c_white,$FF00D2FE,1.5,$FF342F32,x+irandom_range(-6,6),y+irandom_range(-6,6),depth-1,1,true,false)
+		create_bubble_effect(irandom_range(10,100)/250,direction+irandom_range(-10,10),0,-1*irandom_range(1,100)/10,0.03,0.03,c_white,$FF00D2FE,1.5,$FF342F32,x+irandom_range(-6,6),y+irandom_range(-6,6),depth-1,1,true,false)
 		}
 	time = irandom_range(-image_index*2,0)
 	}

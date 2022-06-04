@@ -1,7 +1,6 @@
 /// @description add room connection
 // You can write your code in this editor
-show_debug_message("added connection!")
-
+chat_up("added connection!",-4)
 
 for(var i = 0; i <= 30; i++)
 {
@@ -104,12 +103,12 @@ for(var i = 0; i <= 30; i++)
 				}
 			total_repeat --
 			}
-		show_debug_message("total_repeat : "+string(total_repeat))
+		chat_up("total_repeat : "+string(total_repeat),-4)
 		}
 	}
 }
 //}
 
 
-show_debug_message("room_type : "+string(room_type+random_get_seed()))
+chat_up("room_seed : "+string(room_type+random_get_seed()),-4)
 

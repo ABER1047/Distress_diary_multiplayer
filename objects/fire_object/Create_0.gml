@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+;
 gravity = 0.1
 time = 0
 timer = 0

@@ -112,13 +112,13 @@ view_shake(2,8,5)
 	repeat(irandom_range(14,17))
 	{
 	
-	create_buble_effect(2.5,irandom_range(0,359),0,choose(-1)*irandom_range(1,100)/10,0.08,0.08,$FF00D2FE,$FF076BFE,1.5,$FF737272,x,y,-room_width*1.5,0,true,false)
+	create_bubble_effect(2.5,irandom_range(0,359),0,choose(-1)*irandom_range(1,100)/10,0.08,0.08,$FF00D2FE,$FF076BFE,1.5,$FF737272,x,y,-room_width*1.5,0,true,false)
 	}
 	
 	repeat(irandom_range(7,10))
 	{
 	
-	create_buble_effect(3,irandom_range(0,359),0,choose(-1)*irandom_range(1,100)/10,0.07,0.07,c_white,$FF00D2FE,1.5,$FF342F32,x,y,-room_width*1.5,1,true,false)
+	create_bubble_effect(3,irandom_range(0,359),0,choose(-1)*irandom_range(1,100)/10,0.07,0.07,c_white,$FF00D2FE,1.5,$FF342F32,x,y,-room_width*1.5,1,true,false)
 	}
 	
 	repeat(irandom_range(7,10))

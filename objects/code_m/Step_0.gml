@@ -8,7 +8,7 @@ if (room == Room2)
 		
 		if (server < 0) 
 		{
-		show_message("서버 생성에 오류가 발생하였습니다.");
+		chat_up("서버 생성에 오류가 발생하였습니다",-4);
 		}
 		else 
 		{
@@ -24,7 +24,7 @@ if (room == Room2)
 		
 		if (res < 0) 
 		{
-		show_message("서버 연결에 오류가 발생하였습니다");
+		chat_up("서버 연결에 오류가 발생하였습니다",-4);
 		}
 		else 
 		{

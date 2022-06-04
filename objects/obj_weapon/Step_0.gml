@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if setting_object = 1
+{
 var target = owner_
 in_hand_item_set_xy(self,target,0)
 if (instance_exists(target) && global.nickname = target.nickname) 
@@ -466,6 +468,7 @@ var spr_setting__ = asset_get_index(sprite_get_name(string(target.ori_spr))+"_1"
 	image_angle = target.last_angle*90-45
 	}
 
+}
 }
 //draw_set_alpha(1)
 //draw_text(x,y,string(swing_ef_angle[1])+" / "+string(swing_ef_angle[2]))

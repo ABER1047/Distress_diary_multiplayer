@@ -1,7 +1,7 @@
 /// @description create sub room
 // You can write your code in this editor
 
-show_debug_message("give more chance to create connected room")
+chat_up("give more chance to create connected room",-4)
 
 
 //메인 룸 생성
@@ -550,9 +550,9 @@ event_user(2);
 
 
 /////////////////////////////////////////////////
-show_debug_message("recreated!")
-show_debug_message("max_r_connection : "+string(max_r_connection))
-show_debug_message("main_room_val : "+string(main_room_val))
-show_debug_message("total_repeat_sub_r_cre : "+string(total_repeat_sub_r_cre))
-show_debug_message("total_repeated : "+string(total_repeated))
-show_debug_message("total_room : "+string(total_room))
+chat_up("recreated!",-4)
+chat_up("max_r_connection : "+string(max_r_connection),-4)
+chat_up("main_room_val : "+string(main_room_val),-4)
+chat_up("total_repeat_sub_r_cre : "+string(total_repeat_sub_r_cre),-4)
+chat_up("total_repeated : "+string(total_repeated),-4)
+chat_up("total_room : "+string(total_room),-4)
