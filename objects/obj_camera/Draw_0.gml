@@ -5,7 +5,6 @@ var s_y = camera_get_view_y(view_camera[0])
 var s_w = camera_get_view_width(view_camera[0])
 var s_h = camera_get_view_height(view_camera[0])
 var c_x = v_x/1280
-
 var my_p = get_my_p(global.nickname,0)
 
 if surface_exists(surf_screen)
