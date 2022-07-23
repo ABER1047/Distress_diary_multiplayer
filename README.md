@@ -12,15 +12,16 @@
 
 대충 크게 중요한 코드 내용들은 아래 참고
 - 멀티플레이 시스템 (P2P방식)
-![preview_3](preview3.gif)
+![preview_1](preview1.gif)
 
 - 랜덤맵 (아이작식 랜덤맵 같은데, 그거랑 무관하게 직접 만든 알고리즘)
-![preview_3](preview3.gif)
+![preview_2_1](preview2_1.gif)
+![preview_2_2](preview2_2.gif)
 
 - 멀티셀 알고리즘 (타르코프식 인벤토리 시스템, 아이템 가로 세로 회전도 가능)
 ![preview_3](preview3.gif)
 
-- 철퇴 (플레이어가 열심히 흔들면 철퇴에 가속도 붙는 방식)
+- 철퇴 (플레이어가 열심히 흔들면 해당 방향으로 철퇴에 가속도가 붙는 방식)
 ![preview_4](preview4.gif)
 
 등등...
