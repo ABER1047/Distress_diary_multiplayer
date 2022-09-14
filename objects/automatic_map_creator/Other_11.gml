@@ -51,7 +51,7 @@ if (room_type = 0)
 								yy = 0;
 								}
 							}
-							if random_dir_r_cre = 1
+							else if random_dir_r_cre = 1
 							{
 							xx = -1
 								if i = 0
@@ -61,7 +61,7 @@ if (room_type = 0)
 								yy = 0;
 								}
 							}
-							if random_dir_r_cre = 2
+							else if random_dir_r_cre = 2
 							{
 							yy = 1
 								if ii = 30
@@ -71,7 +71,7 @@ if (room_type = 0)
 								yy = 0;
 								}
 							}
-							if random_dir_r_cre = 3
+							else if random_dir_r_cre = 3
 							{
 							yy = -1
 								if ii = 0

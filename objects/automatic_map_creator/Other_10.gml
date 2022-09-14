@@ -39,7 +39,7 @@ for(var i = 0; i <= 30; i++)
 	room_connected_from_yy2[i,ii] = -4;
 	room_connection_[i,ii] = 0
 	
-	//dependented value
+	//dependent value
 	room_xsize[i,ii] = irandom_range(3,12);
 	room_ysize[i,ii] = irandom_range(3,12);
 	}
