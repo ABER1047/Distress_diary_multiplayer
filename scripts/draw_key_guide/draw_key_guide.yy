@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "draw_key_guide",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "스크립트",
     "path": "folders/스크립트.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "draw_key_guide",
-  "tags": [],
-  "resourceType": "GMScript",
 }

@@ -9,23 +9,23 @@ var my_p = get_my_p(global.nickname,0)
 
 if surface_exists(surf_screen)
 {
-draw_screen_rgb_split(surf_screen,0.1);
+	draw_screen_rgb_split(surf_screen,0.1);
 	if global.night_vision > 0
 	{
-	draw_surface_ext(surf_screen,s_x,s_y,c_x,c_x,0,$FFFAFF00,1)
+		draw_surface_ext(surf_screen,s_x,s_y,c_x,c_x,0,$FFFAFF00,1)
 	}
 
 	if sc_blackout_ef_alpha > 0
 	{
-	//화면 흑백
-	shader_set(shader)
-	draw_surface_ext(surf_screen,s_x,s_y,c_x,c_x,0,c_white,sc_blackout_ef_alpha)
-	shader_reset()
+		//화면 흑백
+		shader_set(shader)
+		draw_surface_ext(surf_screen,s_x,s_y,c_x,c_x,0,c_white,sc_blackout_ef_alpha)
+		shader_reset()
 	}
 }
 else
 {
-surf_screen = surface_create(s_w,s_h)
+	surf_screen = surface_create(s_w,s_h)
 }
 
 
