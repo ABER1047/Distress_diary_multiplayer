@@ -19,8 +19,8 @@ if (type == network_type_connect)
 		{
 			if (other.index == playerID) 
 			{
-			buffer_write(other.IMG_INFO_buffer, buffer_string,nickname);
-			buffer_write(other.IMG_INFO_buffer, buffer_u8,soc);
+				buffer_write(other.IMG_INFO_buffer, buffer_string,nickname);
+				buffer_write(other.IMG_INFO_buffer, buffer_u8,soc);
 			}
 		}
 		index++;

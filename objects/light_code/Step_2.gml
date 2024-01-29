@@ -45,17 +45,17 @@ if global.light_surf_nv != 0
 
 if surface_exists(global.blind_outside_map)
 {
-surface_set_target(global.blind_outside_map);
-gpu_set_blendmode_ext(bm_inv_dest_color, bm_inv_src_color);
-draw_set_color($ffffff);
-draw_set_alpha(1);
-draw_rectangle(0, 0, 1920*2, 1080*2, 0);
-gpu_set_blendmode(bm_normal);
-surface_reset_target()
+	surface_set_target(global.blind_outside_map);
+	gpu_set_blendmode_ext(bm_inv_dest_color, bm_inv_src_color);
+	draw_set_color($ffffff);
+	draw_set_alpha(1);
+	draw_rectangle(0, 0, 1920*2, 1080*2, 0);
+	gpu_set_blendmode(bm_normal);
+	surface_reset_target()
 }
 else
 {
-global.blind_outside_map = surface_create(1920, 1080);
+	global.blind_outside_map = surface_create(1920, 1080);
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
