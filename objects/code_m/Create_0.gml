@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 window()
-server_ip = "211.192.230.184";//"127.0.0.1";
-server_port = 12524; 
+server_ip = "127.0.0.1";
+server_port = 32512; 
 is_server = false;
 index = 0;
 server = -4;

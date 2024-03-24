@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "in_hand_item_set_xy",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "스크립트",
-    "path": "folders/스크립트.yy",
+  "$GMScript":"",
+  "%Name":"in_hand_item_set_xy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"in_hand_item_set_xy",
+  "parent":{
+    "name":"스크립트",
+    "path":"folders/스크립트.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

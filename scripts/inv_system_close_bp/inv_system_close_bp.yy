@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "inv_system_close_bp",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "스크립트",
-    "path": "folders/스크립트.yy",
+  "$GMScript":"",
+  "%Name":"inv_system_close_bp",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"inv_system_close_bp",
+  "parent":{
+    "name":"스크립트",
+    "path":"folders/스크립트.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

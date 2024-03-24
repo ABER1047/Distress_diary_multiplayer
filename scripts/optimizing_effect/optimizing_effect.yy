@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "optimizing_effect",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "스크립트",
-    "path": "folders/스크립트.yy",
+  "$GMScript":"",
+  "%Name":"optimizing_effect",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"optimizing_effect",
+  "parent":{
+    "name":"스크립트",
+    "path":"folders/스크립트.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

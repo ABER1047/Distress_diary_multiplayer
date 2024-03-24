@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Animation Curves","order":5,"path":"folders/Animation Curves.yy",},
     {"name":"Sequences","order":6,"path":"folders/Sequences.yy",},
     {"name":"객체","order":7,"path":"folders/객체.yy",},
@@ -14,7 +14,7 @@
     {"name":"필기","order":12,"path":"folders/필기.yy",},
     {"name":"확장 기능","order":13,"path":"folders/확장 기능.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"obj_camera","order":1,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"Sprite50","order":57,"path":"sprites/Sprite50/Sprite50.yy",},
     {"name":"bomb_1","order":20,"path":"sounds/bomb_1/bomb_1.yy",},

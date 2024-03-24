@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "chat_up",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "for_multiplayer",
-    "path": "folders/객체/for_multiplayer.yy",
+  "$GMScript":"",
+  "%Name":"chat_up",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"chat_up",
+  "parent":{
+    "name":"for_multiplayer",
+    "path":"folders/객체/for_multiplayer.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
