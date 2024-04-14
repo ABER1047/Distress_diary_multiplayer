@@ -24,9 +24,9 @@ _arrow.pos_y = argument8;
 	if argument6 = 1
 	{
 	buffer_seek(command_buffer, buffer_seek_start, 0);
-	buffer_write(command_buffer, buffer_u8, code_m.DATA.COMMAND);
+	buffer_write(command_buffer, buffer_u8, DATA.COMMAND);
 	buffer_write(command_buffer, buffer_u8, code_m.my_ID);
-	buffer_write(command_buffer, buffer_u8, code_m.COMM.ARROW_CRE);
+	buffer_write(command_buffer, buffer_u8, COMM.ARROW_CRE);
 	buffer_write(command_buffer, buffer_string,string(owner_.nickname));
 	buffer_write(command_buffer, buffer_string,floor(argument4));
 	buffer_write(command_buffer, buffer_string,floor(argument0*10));

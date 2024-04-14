@@ -86,7 +86,7 @@ fl_tile.image_yscale = automatic_map_creator.room_ysize[n_xx,n_yy];
 
 
 buffer_seek(pos_buffer, buffer_seek_start, 0);
-buffer_write(pos_buffer, buffer_u8, code_m.DATA.N_POS);
+buffer_write(pos_buffer, buffer_u8, DATA.N_POS);
 buffer_write(pos_buffer, buffer_u8, code_m.my_ID);
 buffer_write(pos_buffer, buffer_string,global.n_pos_x[code_m.my_ID]);
 buffer_write(pos_buffer, buffer_string,global.n_pos_y[code_m.my_ID]);
@@ -100,7 +100,7 @@ global.refresh_pos_for_multi = 0
 if (global.refresh_map_for_multi = 1 && code_m.is_server = true)
 {
 buffer_seek(map_buffer, buffer_seek_start, 0);
-buffer_write(map_buffer, buffer_u8, code_m.DATA.REFRESH_MAP);
+buffer_write(map_buffer, buffer_u8, DATA.REFRESH_MAP);
 buffer_write(map_buffer, buffer_u8, code_m.my_ID);
 buffer_write(map_buffer, buffer_string, automatic_map_creator.room_type);
 buffer_write(map_buffer, buffer_string, automatic_map_creator.main_room_val);

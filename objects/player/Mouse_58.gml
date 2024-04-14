@@ -8,9 +8,9 @@ instance_create_depth(floor(xx),floor(yy),0,ping_effect)
 
 
 buffer_seek(command_buffer, buffer_seek_start, 0);
-buffer_write(command_buffer, buffer_u8, code_m.DATA.COMMAND);
+buffer_write(command_buffer, buffer_u8, DATA.COMMAND);
 buffer_write(command_buffer, buffer_u8, code_m.my_ID);
-buffer_write(command_buffer, buffer_u8, code_m.COMM.PING_HERE);
+buffer_write(command_buffer, buffer_u8, COMM.PING_HERE);
 buffer_write(command_buffer, buffer_string,string(nickname));
 buffer_write(command_buffer, buffer_string,floor(xx));
 buffer_write(command_buffer, buffer_string,floor(yy));

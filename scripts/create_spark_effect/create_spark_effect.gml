@@ -35,9 +35,9 @@ function create_spark_effect(argument0,argument1,argument2,argument3,argument4,a
 	if argument9 = 1
 	{
 	buffer_seek(command_buffer, buffer_seek_start, 0);
-	buffer_write(command_buffer, buffer_u8, code_m.DATA.COMMAND);
+	buffer_write(command_buffer, buffer_u8, DATA.COMMAND);
 	buffer_write(command_buffer, buffer_u8, code_m.my_ID);
-	buffer_write(command_buffer, buffer_u8, code_m.COMM.SPARK_CRE);
+	buffer_write(command_buffer, buffer_u8, COMM.SPARK_CRE);
 	buffer_write(command_buffer, buffer_string,string(global.nickname));
 	buffer_write(command_buffer, buffer_string,floor(argument0*10));
 	buffer_write(command_buffer, buffer_string,floor(argument1*10));

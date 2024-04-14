@@ -16,13 +16,13 @@ function get_player_angle(argument0)
 		{
 			if sign(__ytoy) > 0
 			{
-			var spr_setting__ = asset_get_index(sprite_get_name(string(target_____.ori_spr))+"_1")
+			var spr_setting__ = asset_get_index(sprite_get_name(target_____.ori_spr)+"_1")
 			target_____.sprite_index = spr_setting__
 			target_____.last_angle = 1
 			}
 			else
 			{
-			var spr_setting__ = asset_get_index(sprite_get_name(string(target_____.ori_spr))+"_2")
+			var spr_setting__ = asset_get_index(sprite_get_name(target_____.ori_spr)+"_2")
 			target_____.sprite_index = spr_setting__
 			target_____.last_angle = 3
 			}

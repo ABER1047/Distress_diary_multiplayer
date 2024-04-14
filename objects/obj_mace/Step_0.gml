@@ -77,7 +77,7 @@ var _dis = point_distance(x,y,xx,yy)
 	}
 	
 buffer_seek(command_buffer, buffer_seek_start, 0);
-buffer_write(command_buffer, buffer_u8, code_m.DATA.MACE_STATE);
+buffer_write(command_buffer, buffer_u8, DATA.MACE_STATE);
 buffer_write(command_buffer, buffer_u8, code_m.my_ID);
 buffer_write(command_buffer, buffer_string,floor(x*10));
 buffer_write(command_buffer, buffer_string,floor(y*10));

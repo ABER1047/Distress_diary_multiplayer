@@ -471,7 +471,7 @@ depth = -floor(y+19)
 
 		if last_angle = 1
 		{
-		var spr_setting__ = asset_get_index(sprite_get_name(string(ori_spr))+"_1")
+		var spr_setting__ = asset_get_index(sprite_get_name(ori_spr)+"_1")
 		sprite_index = spr_setting__
 		bp_sprite = asset_get_index("spr_original_bp"+string(sprite_seter)+"_1")
 		}
@@ -485,7 +485,7 @@ depth = -floor(y+19)
 
 		if last_angle = 3
 		{
-		var spr_setting__ = asset_get_index(sprite_get_name(string(ori_spr))+"_2")
+		var spr_setting__ = asset_get_index(sprite_get_name(ori_spr)+"_2")
 		sprite_index = spr_setting__
 			if sprite_exists(spr_setting__)
 			{
@@ -570,9 +570,9 @@ var get_other_p = instance_nearest(x,y,player)
 			{
 			show_debug_message("R")
 			buffer_seek(command_buffer, buffer_seek_start, 0);
-			buffer_write(command_buffer, buffer_u8, code_m.DATA.COMMAND);
+			buffer_write(command_buffer, buffer_u8, DATA.COMMAND);
 			buffer_write(command_buffer, buffer_u8, code_m.my_ID);
-			buffer_write(command_buffer, buffer_u8, code_m.COMM.P_REVIVE);
+			buffer_write(command_buffer, buffer_u8, COMM.P_REVIVE);
 			buffer_write(command_buffer, buffer_string,string(nickname));
 			send_all(command_buffer);
 			reviving_now = 0;

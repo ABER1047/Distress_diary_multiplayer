@@ -2,8 +2,8 @@
 // You can write your code in this editor
 if setting_object = 1
 {
-var target = owner_
-in_hand_item_set_xy(self,target,0)
+var target = owner_;
+in_hand_item_set_xy(self,target,0);
 if (instance_exists(target) && global.nickname = target.nickname) 
 {
 var x_pos_ = global.n_pos_x[code_m.my_ID];
@@ -53,7 +53,7 @@ f_thrower_volume += (-0.01 - f_thrower_volume)*0.05
 }
 
 
-var spr_setting__ = asset_get_index(sprite_get_name(string(target.ori_spr))+"_1")
+var spr_setting__ = asset_get_index(string(sprite_get_name(target.ori_spr))+"_1");
 	if target.sprite_index = spr_setting__
 	{
 	depth = target.depth+1
