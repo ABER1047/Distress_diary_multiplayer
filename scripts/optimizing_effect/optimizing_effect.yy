@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"optimizing_effect",
   "isCompatibility":false,
   "isDnD":false,

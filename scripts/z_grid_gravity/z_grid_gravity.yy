@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"z_grid_gravity",
   "isCompatibility":false,
   "isDnD":false,

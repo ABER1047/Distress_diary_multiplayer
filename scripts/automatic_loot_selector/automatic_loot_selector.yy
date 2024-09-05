@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"automatic_loot_selector",
   "isCompatibility":false,
   "isDnD":false,

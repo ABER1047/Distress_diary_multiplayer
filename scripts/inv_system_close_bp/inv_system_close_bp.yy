@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"inv_system_close_bp",
   "isCompatibility":false,
   "isDnD":false,

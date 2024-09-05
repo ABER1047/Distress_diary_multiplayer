@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"send_much",
   "isCompatibility":false,
   "isDnD":false,

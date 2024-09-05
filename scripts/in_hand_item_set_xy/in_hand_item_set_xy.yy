@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"in_hand_item_set_xy",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"create_bomb",
   "isCompatibility":false,
   "isDnD":false,

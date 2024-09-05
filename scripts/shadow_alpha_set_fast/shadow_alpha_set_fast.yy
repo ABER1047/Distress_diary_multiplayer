@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"shadow_alpha_set_fast",
   "isCompatibility":false,
   "isDnD":false,

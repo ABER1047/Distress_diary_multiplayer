@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"send_one_ID",
   "isCompatibility":false,
   "isDnD":false,

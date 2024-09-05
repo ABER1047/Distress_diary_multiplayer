@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"draw_screen_rgb_split",
   "isCompatibility":false,
   "isDnD":false,

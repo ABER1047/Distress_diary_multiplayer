@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"check_position_inside_view",
   "isCompatibility":false,
   "isDnD":false,

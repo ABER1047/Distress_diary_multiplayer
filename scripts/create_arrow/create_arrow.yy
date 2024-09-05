@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"create_arrow",
   "isCompatibility":false,
   "isDnD":false,

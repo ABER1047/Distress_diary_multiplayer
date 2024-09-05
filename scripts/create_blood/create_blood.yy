@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"create_blood",
   "isCompatibility":false,
   "isDnD":false,

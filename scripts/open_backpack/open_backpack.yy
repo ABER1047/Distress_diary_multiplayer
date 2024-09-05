@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"open_backpack",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"decrease_item_num_in_inv",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"create_fire_object",
   "isCompatibility":false,
   "isDnD":false,

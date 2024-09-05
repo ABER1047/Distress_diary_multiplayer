@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"set_surf_outline",
   "isCompatibility":false,
   "isDnD":false,

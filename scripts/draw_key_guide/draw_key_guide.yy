@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"draw_key_guide",
   "isCompatibility":false,
   "isDnD":false,
